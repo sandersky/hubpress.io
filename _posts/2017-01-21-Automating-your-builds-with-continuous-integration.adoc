@@ -7,8 +7,20 @@ When working on your Javascript projects do you find yourself forgetting to bump
 
 ## Setup Travis CI
 
-Now that we know what we will be working with it is time to dive in. I am going to assume you already have a Github repository and are ready to automate your builds. The first step is to visit link:https://travis-ci.org/[Travis CI] and click the *Sign in with Github* button.
+Now that we know what we will be working with it is time to dive in. I am going to assume you already have a Github repository and are ready to automate your builds. The first step is to visit link:https://travis-ci.org/[Travis CI] and click the *Sign in with Github* button. Make sure to grant Travis the permissions requested for your Github account.
 
 > Note: Don't get https://travis-ci.com/ confused with https://travis-ci.org/ as the former is for paid accounts to wire up continuous integration on private repositories.
 
-Once you are logged into Travis you can activate bbuilds for your repo by visiting a link in the following format: https://travis-ci.org/<username>/<repository>. Simply replace *<username>* with your Github username or organization and replace *<repository>* with the name of your Github repository. Once you visit this page there should be an *Activate repository* button, go ahead and press it.
+Once you are logged into Travis you can activate builds for your repository by visiting a link in the following format: https://travis-ci.org/<username>/<repository>. Simply replace *<username>* with your Github username or organization and replace *<repository>* with the name of your Github repository. Once you visit this page there should be an *Activate repository* button, go ahead and press it. Next we'll need to add a configuration file for Travis to the repostiry, so it knows what to do. In the root directory of your repository add the following file:
+
+*.travis.yml*
+
+``
+language: node_js
+node_js:
+- stable
+install:
+- npm install
+script:
+- npm test
+``
