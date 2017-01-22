@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://sandersky.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 22 Jan 2017 21:20:32 GMT</lastBuildDate><atom:link href="https://sandersky.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Automating your builds with continuous integration]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>When working on your Javascript projects do you find yourself forgetting to bump the version in <code>package.json</code>? Forgetting to maintain a changelog? Failing to publish to npm? If so I&#8217;m here to tell you that all of that can be automated for free on an open source project. Before we dive into the nitty gritty here are the pieces to this beautiful puzzle:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/ciena-blueplanet/pr-bumper/">pr-bumper</a></p>
+</li>
+<li>
+<p><a href="https://travis-ci.org/">Travis CI</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_travis_ci">Setup Travis CI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now that we know what we will be working with it is time to dive in. I am going to assume you already have a Github repository and are ready to automate your builds. The first step is to visit <a href="https://travis-ci.org/">Travis CI</a> and click the <strong>Sign in with Github</strong> button. Make sure to grant Travis the permissions requested for your Github account.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Note: Don&#8217;t get <a href="https://travis-ci.com/" class="bare">https://travis-ci.com/</a> confused with <a href="https://travis-ci.org/" class="bare">https://travis-ci.org/</a> as the former is for paid accounts to wire up continuous integration on private repositories.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Once you are logged into Travis you can activate builds for your repository by visiting a link in the following format: <a href="https://travis-ci.org/&lt;username&gt;/&lt;repository&gt" class="bare">https://travis-ci.org/&lt;username&gt;/&lt;repository&gt</a>;. Simply replace <strong>&lt;username&gt;</strong> with your Github username or organization and replace <strong>&lt;repository&gt;</strong> with the name of your Github repository. Once you visit this page there should be an <strong>Activate repository</strong> button, go ahead and press it. Next we&#8217;ll need to add a configuration file for Travis to the repostiry, so it knows what to do. In the root directory of your repository add the following file:</p>
+</div>
+<div class="paragraph">
+<p><strong>.travis.yml</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>language: node_js
+node_js:
+- stable
+install:
+- npm install
+script:
+- npm test</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>language</strong> tells Travis our project is using Node.js, and the <strong>stable</strong> tells it we want to use the latest version of Node, which as of writing this article is Node 7. The <strong>install</strong> step tells Travis to run <strong>npm install</strong> to install necessary dependencies and the <strong>script</strong> tells Travis to run <strong>npm test</strong> for the tests. If <strong>npm test</strong> fails then the Travis build will fail. This script should be wired up to run whatever tests you have in your project. For example if your project is an Ember application you&#8217;d probaby have <strong>npm test</strong> set to run <strong>ember test</strong> or <strong>ember try</strong>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This article is not complete, stay tuned for the rest of it.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>]]></description><link>https://sandersky.github.io/2017/01/21/Automating-your-builds-with-continuous-integration.html</link><guid isPermaLink="true">https://sandersky.github.io/2017/01/21/Automating-your-builds-with-continuous-integration.html</guid><dc:creator><![CDATA[Matthew Dahl]]></dc:creator><pubDate>Sat, 21 Jan 2017 00:00:00 GMT</pubDate></item></channel></rss>
