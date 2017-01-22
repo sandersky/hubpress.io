@@ -5,6 +5,8 @@ When working on your Javascript projects do you find yourself forgetting to bump
 * link:https://github.com/ciena-blueplanet/pr-bumper/[pr-bumper]
 * link:https://travis-ci.org/[Travis CI]
 
+## Setup Travis CI
+
 Now that we know what we will be working with it is time to dive in. I am going to assume you already have a Github repository and are ready to automate. The first step is to visit link:https://travis-ci.org/[Travis CI] and click the *Sign in with Github* button.
 
 > Note: Don't get https://travis-ci.com/ confused with https://travis-ci.org/ as the former is for paid accounts to wire up continuous integration on private repositories.
