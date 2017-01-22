@@ -3,6 +3,8 @@
 When working on your Javascript projects do you find yourself forgetting to bump the version in `package.json`? Forgetting to maintain a changelog? Failing to publish to npm? If so I'm here to tell you that all of that can be automated for free on an open source project. Before we dive into the nitty gritty here are the pieces to this beautiful puzzle:
 
 * link:https://github.com/ciena-blueplanet/pr-bumper/[pr-bumper]
-* link:https://travis-ci.com/[Travis CI]
+* link:https://travis-ci.org/[Travis CI]
 
-Now that we know what we will be working with it is time to dive in.
+Now that we know what we will be working with it is time to dive in. I am going to assume you already have a Github repository and are ready to automate. The first step is to visit link:https://travis-ci.org/[Travis CI] and click the *Sign in with Github* button.
+
+> Note: Don't get https://travis-ci.com/ confused with https://travis-ci.org/ as the former is for paid accounts to wire up continuous integration on private repositories.
