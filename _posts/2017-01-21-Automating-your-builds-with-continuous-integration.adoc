@@ -1,0 +1,6 @@
+# Automating your builds with continuous integration
+
+When working on your Javascript projects do you find yourself forgetting to bump the version in `package.json`? Forgetting to maintain a changelog? Failing to publish to npm? If so I'm here to tell you that all of that can be automated for free given you are using an open source project. Before we dive into the nitty gritty here are the pieces to this beautiful puzzle:
+
+* [pr-bumper](https://github.com/ciena-blueplanet/pr-bumper/)
+* [Travis CI](https://travis-ci.com/)
