@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://sandersky.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 22 Jan 2017 21:20:32 GMT</lastBuildDate><atom:link href="https://sandersky.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Automating your builds with continuous integration]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://sandersky.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Jan 2017 01:21:21 GMT</lastBuildDate><atom:link href="https://sandersky.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Automating your builds with continuous integration]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>When working on your Javascript projects do you find yourself forgetting to bump the version in <code>package.json</code>? Forgetting to maintain a changelog? Failing to publish to npm? If so I&#8217;m here to tell you that all of that can be automated for free on an open source project. Before we dive into the nitty gritty here are the pieces to this beautiful puzzle:</p>
@@ -30,6 +30,13 @@
 </div>
 <div class="paragraph">
 <p>Once you are logged into Travis you can activate builds for your repository by visiting a link in the following format: <a href="https://travis-ci.org/&lt;username&gt;/&lt;repository&gt" class="bare">https://travis-ci.org/&lt;username&gt;/&lt;repository&gt</a>;. Simply replace <strong>&lt;username&gt;</strong> with your Github username or organization and replace <strong>&lt;repository&gt;</strong> with the name of your Github repository. Once you visit this page there should be an <strong>Activate repository</strong> button, go ahead and press it. Next we&#8217;ll need to add a configuration file for Travis to the repostiry, so it knows what to do. In the root directory of your repository add the following file:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Note: Apply these changes in a branch/fork in which you do your development. This assumes a workflow where your published/upstream branch is separate from your development branch. If you have an organization that you make pull requests to then this is probably as simple as making the changes in your fork. If you are not working with an organization/fork you probably want a <strong>development</strong> branch as well as the <strong>master</strong> branch.</p>
+</div>
+</blockquote>
 </div>
 <div class="paragraph">
 <p><strong>.travis.yml</strong></p>
