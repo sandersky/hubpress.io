@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" href="https://sandersky.github.io/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="//sandersky.github.io/themes/casper/assets/css/screen.css?v=1485120032880" />
+    <link rel="stylesheet" type="text/css" href="//sandersky.github.io/themes/casper/assets/css/screen.css?v=1485134481036" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <link rel="canonical" href="https://sandersky.github.io/2017/01/21/Automating-your-builds-with-continuous-integration.html" />
@@ -92,6 +92,13 @@ null
 </div>
 <div class="paragraph">
 <p>Once you are logged into Travis you can activate builds for your repository by visiting a link in the following format: <a href="https://travis-ci.org/&lt;username&gt;/&lt;repository&gt" class="bare">https://travis-ci.org/&lt;username&gt;/&lt;repository&gt</a>;. Simply replace <strong>&lt;username&gt;</strong> with your Github username or organization and replace <strong>&lt;repository&gt;</strong> with the name of your Github repository. Once you visit this page there should be an <strong>Activate repository</strong> button, go ahead and press it. Next we&#8217;ll need to add a configuration file for Travis to the repostiry, so it knows what to do. In the root directory of your repository add the following file:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Note: Apply these changes in a branch/fork in which you do your development. This assumes a workflow where your published/upstream branch is separate from your development branch. If you have an organization that you make pull requests to then this is probably as simple as making the changes in your fork. If you are not working with an organization/fork you probably want a <strong>development</strong> branch as well as the <strong>master</strong> branch.</p>
+</div>
+</blockquote>
 </div>
 <div class="paragraph">
 <p><strong>.travis.yml</strong></p>
@@ -188,8 +195,8 @@ script:
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1485120032880"></script>
-    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/index.js?v=1485120032880"></script>
+    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1485134481036"></script>
+    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/index.js?v=1485134481036"></script>
 
 </body>
 </html>
