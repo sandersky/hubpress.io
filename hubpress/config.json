@@ -2,7 +2,8 @@
   "meta": {
     "username": "sandersky",
     "repositoryName": "sandersky.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": "www.mattdahl.io"
   },
   "site": {
     "title": "mattdahl.io",
