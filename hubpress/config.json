@@ -4,7 +4,12 @@
     "repositoryName": "sandersky.github.io",
     "branch": "master"
   },
+  "site": {
+    "title": "mattdahl.io",
+    "description": "Ramblings of a developer"
+  },
+  "socialnetwork": {},
   "theme": {
-    "name": "Casper"
+    "name": "casper"
   }
 }
