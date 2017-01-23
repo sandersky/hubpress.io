@@ -27,6 +27,6 @@ script:
 - npm test
 ```
 
-The *language* tells Travis our project is using Node.js, and the *stable* tells it we want to use the latest version of Node, which as of writing this article is Node 7. The *install* step tells Travis to run *npm install* to install necessary dependencies and the *script* tells Travis to run *npm test* for the tests. If *npm test* fails then the Travis build will fail. This script should be wired up to run whatever tests you have in your project. For example if your project is an Ember application you'd probaby have *npm test* set to run *ember test* or *ember try*.
+The *language* tells Travis our project is using Node.js, and the *stable* tells it we want to use the latest version of Node, which as of writing this article is Node 7. The *install* step tells Travis to run *npm install* to install necessary dependencies and the *script* tells Travis to run *npm test* for the tests. If *npm test* fails then the Travis build will fail. This script should be wired up to run whatever tests you have in your project. For example if your project is an Ember application you'd probaby have *npm test* set to run *ember test* or *ember try*. At this stage if you were to make a pull request against the *master* branch of your repository you'd see a pending check in the Github UI as well as a CI build in the Travis UI.
 
 > This article is not complete, stay tuned for the rest of it.
