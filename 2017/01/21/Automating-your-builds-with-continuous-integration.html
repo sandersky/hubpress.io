@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" href="https://sandersky.github.io/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="//sandersky.github.io/themes/casper/assets/css/screen.css?v=1485134481036" />
+    <link rel="stylesheet" type="text/css" href="//sandersky.github.io/themes/casper/assets/css/screen.css?v=1485134972872" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <link rel="canonical" href="https://sandersky.github.io/2017/01/21/Automating-your-builds-with-continuous-integration.html" />
@@ -115,7 +115,7 @@ script:
 </div>
 </div>
 <div class="paragraph">
-<p>The <strong>language</strong> tells Travis our project is using Node.js, and the <strong>stable</strong> tells it we want to use the latest version of Node, which as of writing this article is Node 7. The <strong>install</strong> step tells Travis to run <strong>npm install</strong> to install necessary dependencies and the <strong>script</strong> tells Travis to run <strong>npm test</strong> for the tests. If <strong>npm test</strong> fails then the Travis build will fail. This script should be wired up to run whatever tests you have in your project. For example if your project is an Ember application you&#8217;d probaby have <strong>npm test</strong> set to run <strong>ember test</strong> or <strong>ember try</strong>.</p>
+<p>The <strong>language</strong> tells Travis our project is using Node.js, and the <strong>stable</strong> tells it we want to use the latest version of Node, which as of writing this article is Node 7. The <strong>install</strong> step tells Travis to run <strong>npm install</strong> to install necessary dependencies and the <strong>script</strong> tells Travis to run <strong>npm test</strong> for the tests. If <strong>npm test</strong> fails then the Travis build will fail. This script should be wired up to run whatever tests you have in your project. For example if your project is an Ember application you&#8217;d probaby have <strong>npm test</strong> set to run <strong>ember test</strong> or <strong>ember try</strong>. At this stage if you were to make a pull request against the <strong>master</strong> branch of your repository you&#8217;d see a pending check in the Github UI as well as a CI build in the Travis UI.</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -195,8 +195,8 @@ script:
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1485134481036"></script>
-    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/index.js?v=1485134481036"></script>
+    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1485134972872"></script>
+    <script type="text/javascript" src="//sandersky.github.io/themes/casper/assets/js/index.js?v=1485134972872"></script>
 
 </body>
 </html>
