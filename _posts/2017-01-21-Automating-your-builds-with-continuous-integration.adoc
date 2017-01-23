@@ -13,6 +13,8 @@ Now that we know what we will be working with it is time to dive in. I am going 
 
 Once you are logged into Travis you can activate builds for your repository by visiting a link in the following format: https://travis-ci.org/<username>/<repository>. Simply replace *<username>* with your Github username or organization and replace *<repository>* with the name of your Github repository. Once you visit this page there should be an *Activate repository* button, go ahead and press it. Next we'll need to add a configuration file for Travis to the repostiry, so it knows what to do. In the root directory of your repository add the following file:
 
+> Note: Apply these changes in a branch/fork in which you do your development. This assumes a workflow where your published/upstream branch is separate from your development branch. If you have an organization that you make pull requests to then this is probably as simple as making the changes in your fork. If you are not working with an organization/fork you probably want a *development* branch as well as the *master* branch.
+
 *.travis.yml*
 
 ```
